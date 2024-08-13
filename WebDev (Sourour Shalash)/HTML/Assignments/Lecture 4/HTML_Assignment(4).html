@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- <form action="test.py" method="get"> -->
+    <form action="test.py" method="post" target="_blank">
+        <fieldset>
+            <legend>Question 1</legend>
+            
+            <label for="username">Username: </label>
+            <br>
+            <input type="text" id="username" name="username" placeholder="Ex: Adam" required>
+            <br><br><hr>
+
+            <label for="password">Password: </label>
+            <br>
+            <input type="password" id="password" name="password" placeholder="Create a strong password">
+            <br><br><hr>
+
+            <label for="phone">Mobile: </label>
+            <br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3} \([0-9]{3}\) [0-9]{5}\+" placeholder="Ex: 123 (234) 20100+">
+            <br><br><hr>
+
+            <label for="email">Email: </label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Ex: your-name@domain.com" required>
+            <br><br><hr>
+
+            <label for="subject">Subject: </label>
+            <br>
+            <select name="subject" id="subject">
+                <option selected disabled>Please Select a Subject</option>
+                <option>Mathematics</option>
+                <option>Physics</option>
+                <option>Biology</option>
+            </select>
+            <br><br>
+
+            <input type="hidden" name="sessionId" id="sessionId" value="12345">
+
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Empty Form">
+        </fieldset>
+    </form>
+
+    <br>
+
+    <form action="HTML_Assignment(4).html" method="get">
+        <fieldset>
+            <legend>Question 2 & 3</legend>
+
+            <label for="username">Username: </label>
+            <br>
+            <input type="text" id="username" name="username" placeholder="Ex: Ahmed" minlength="5" maxlength="20" required>
+            <br><br>
+
+            <label for="password">Email: </label>
+            <br>
+            <input type="email" id="email" name="email" value="o@o.com" disabled>
+            <br><br>
+
+            <label for="skills">Skills: </label>
+            <br>
+            <input type="checkbox" name="skills" id="problemSolving" checked>
+            <label for="problemSolving">Problem Solving</label>
+
+            <input type="checkbox" name="skills" id="logicalThinking">
+            <label for="logicalThinking">Logical Thinking</label>
+
+            <input type="checkbox" name="skills" id="advancedSearch">
+            <label for="advancedSearch">Advanced Search</label>
+
+            <input type="checkbox" name="skills" id="analysis">
+            <label for="analysis">Analysis</label>
+
+            <input type="checkbox" name="skills" id="planning">
+            <label for="planning">Planning</label>
+            <br><br>
+
+            <label for="jobs">Jobs: </label>
+            <br>
+            <input type="radio" name="job" id="frontEnd" checked>
+            <label for="frontEnd">Front-End Developer</label>
+
+            <input type="radio" name="job" id="backEnd">
+            <label for="backEnd">Back-End Developer</label>
+
+            <input type="radio" name="job" id="businessAnalyst">
+            <label for="businessAnalyst">Business Analyst</label>
+
+            <input type="radio" name="job" id="projectManager">
+            <label for="projectManager">Project Manager</label>
+
+            <input type="radio" name="job" id="scrumMaster">
+            <label for="scrumMaster">Scrum Master</label>
+
+            <input type="hidden" name="token" id="token" value="b92f1fc2fce391ad7af633723afd3055">
+
+            <br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Empty">
+        </fieldset>
+
+    </form>
+
+    <br>
+
+    <form action="HTML_Assignment(4).html" method="get" target="_blank" novalidate>
+        <fieldset>
+            <legend>Question 4</legend>
+
+            <label for="search">Search: </label>
+            <br>
+            <input type="search" id="search" name="search" placeholder="Enter a Search Word">
+            <br><br>
+
+            <label for="file">File: </label>
+            <br>
+            <input type="file" id="file" name="file">
+            <br><br>
+
+            <label for="url">URL: </label>
+            <br>
+            <input type="url" id="url" name="url" required>
+            <br><br>
+
+            <label for="date">Date: </label>
+            <br>
+            <input type="datetime-local" id="date" name="date">
+            <br><br>
+            
+            <label for="month">month: </label>
+            <br>
+            <input type="month" id="month" name="month">
+
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Empty">
+        </fieldset>
+    </form>
+</body>
+</html>
