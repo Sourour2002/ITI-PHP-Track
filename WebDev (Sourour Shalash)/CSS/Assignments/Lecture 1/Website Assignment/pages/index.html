@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS Assignment 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <!-- This way of styling a page uses an external css file. 
+     It has an equal priority to internal styling. Only the order matters. -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../source/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/master.css'>
+
+    <!-- This way of styling a page uses an internal style tag. 
+     It has an equal priority to external styling. Only the order matters. -->
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- This way of styling a page uses the attribute "style".
+     It has the highest priority of all styling ways. -->
+    <p style="color: blue;">This Is Our Paragraph</p>
+
+    <div style="background-color: red;">This how you color red using the pre-defined colors method.</div>
+    <br>
+
+    <div style="background-color: rgb(255, 0, 0);">This how you color red using the RGB(Red, Green, Blue) values method.</div>
+    <br>
+
+    <div style="background-color: hsl(0, 100%, 50%);">This how you color red using the HSL(Hue, Saturation, Light) values method.</div>
+    <br>
+
+    <div style="background-color: #ff0000;">This how you color using red the hex value method.</div>
+</body>
+</html>

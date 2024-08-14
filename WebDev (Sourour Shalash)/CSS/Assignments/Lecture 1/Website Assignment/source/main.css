@@ -1,0 +1,20 @@
+/* This is a class selector. Class selectors can work on multiple elements at once. */
+.title {
+
+}
+
+/* This is an id selector. ID selectors only works on one element. */
+#nav {
+
+}
+
+/* This is an element selector. Element selectors works on every one of that element. 
+This one is for all div elements in the page.*/
+div {
+    background-color: yellow;
+}
+
+/* This one is for all h2 elements in the page. */
+h2 {
+
+}
