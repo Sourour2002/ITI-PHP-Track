@@ -1,0 +1,74 @@
+/* Question 1 */
+
+.first-div {
+    width: 500px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: blueviolet;
+
+    /* 
+    background-color: #8a2be2;
+    background-color: hsl(271, 76%, 53%);
+    background-color: rgb(138, 43, 226);  
+    */
+}
+
+.second-div {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(138, 43, 226, 0.5); /* RGBA with 50% transparency */
+}
+
+.third-div {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(138, 43, 226, 0.1); /* RGBA with 10% transparency */
+}
+
+/* Question 2 */
+.shape1, .shape2, .shape3, .shape4 {
+    width: 400px;
+    height: 400px;
+    background-image: url('shapes-icon.png');
+    margin: 20px auto;
+}
+
+.shape1 {
+    background-repeat: no-repeat;
+}
+
+.shape2 {
+    background-repeat: repeat-y;
+}
+
+.shape3 {
+    background-repeat: repeat-x;
+}
+
+.shape4 {
+    background-repeat: repeat;
+}
+
+/* Question 3 */
+.div1, .div2, .div3 {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.div1 {
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.div2 {
+    border: 3px dotted green;
+    border-radius: 25px;
+}
+
+.div3 {
+    border: 5px double blue;
+    border-radius: 50%;
+}

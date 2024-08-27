@@ -1,0 +1,43 @@
+Exercise 1:
+
+CREATE TABLE countries (
+    country_id INT PRIMARY KEY,
+    country_name VARCHAR(100),
+    region_id INT
+);
+
+<-------------------------------------------------------->
+
+Exercise 2:
+
+CREATE TABLE dup_countries LIKE countries;
+
+<-------------------------------------------------------->
+
+Exercise 3:
+
+RENAME TABLE countries TO country_new;
+
+<-------------------------------------------------------->
+
+Exercise 4:
+
+ALTER TABLE locations ADD region_id INT;
+
+<-------------------------------------------------------->
+
+Exercise 5:
+
+ALTER TABLE locations MODIFY country_id INT;
+
+<-------------------------------------------------------->
+
+Exercise 6:
+
+ALTER TABLE locations DROP COLUMN city;
+
+<-------------------------------------------------------->
+
+Exercise 7:
+
+ALTER TABLE locations ADD PRIMARY KEY (location_id);

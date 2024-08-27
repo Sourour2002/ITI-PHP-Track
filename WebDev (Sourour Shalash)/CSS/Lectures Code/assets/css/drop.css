@@ -1,0 +1,23 @@
+ul{
+    list-style-type: none;
+}
+li{
+    float: left;
+}
+li a,.drop{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.content{
+    display: none;
+    position: absolute;
+    background-color: green;
+}
+.content a{
+    display: block;
+}
+li.container:hover .content{
+    display: block;
+
+}

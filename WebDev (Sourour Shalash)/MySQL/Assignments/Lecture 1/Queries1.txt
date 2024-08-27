@@ -1,0 +1,21 @@
+Exercise 1:
+
+SELECT * FROM cats;
+
+<-------------------------------------------------------->
+
+Exercise 2:
+
+SELECT * FROM cats WHERE age < 5;
+
+<-------------------------------------------------------->
+
+Exercise 3:
+
+SELECT * FROM cats WHERE fav_toy = 'Ball';
+
+<-------------------------------------------------------->
+
+Exercise 4:
+
+SELECT * FROM cats WHERE age >= 5 AND fav_toy = 'Ball';

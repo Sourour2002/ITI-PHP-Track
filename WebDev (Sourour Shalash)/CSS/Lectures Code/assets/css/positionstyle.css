@@ -1,0 +1,62 @@
+div.static{
+    position:static;
+    border: 1px solid;
+    left: 70px;
+}
+.relative{
+    position: relative;
+    border: 2px solid;
+    left: 50px;
+    width: 500;
+    height: 300px;
+            
+}
+.fixed{
+    position: fixed;
+    border: 3px dashed red;
+    width: 400px;
+}
+.absolute{
+    position: absolute;
+    border: 3px solid green;
+    width: 400px;
+    height: 200px;
+    left: 50px;
+    top: 60px;
+}
+.sticky{
+    position: sticky;
+    border: 3px dotted blue;
+    left: 50px;
+}
+.float{
+    float: right;
+    border: 2px solid black;
+    width: 400px;
+}
+.inherit{
+    border: 1px dashed green;
+    width: 200px;
+    float: inherit;
+}
+div{
+    border: 2px solid black;
+    /*float: left;*/
+}
+.div3{
+    float: right;
+}
+.center{
+    border: 2px dashed red;
+    width: 50%;
+    text-align: center;
+}
+p{
+    width: 50%;
+}
+.overflow{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    overflow:hidden;
+}

@@ -1,0 +1,69 @@
+Exercise 1:
+
+Create the Employee table Quarry:
+
+CREATE TABLE Employee (
+    EMPLOYEE_ID INT PRIMARY KEY,
+    FIRST_NAME VARCHAR(50),
+    LAST_NAME VARCHAR(50),
+    EMAIL VARCHAR(100),
+    PHONE_NUMBER VARCHAR(20),
+    HIRE_DATE DATE,
+    JOB_ID VARCHAR(10),
+    SALARY DECIMAL(10, 2),
+    COMMISSION_PCT DECIMAL(5, 2),
+    MANAGER_ID INT,
+    DEPARTMENT_ID INT
+);
+
+Insert Quarry:
+
+INSERT INTO Employee (EMPLOYEE_ID, FIRST_NAME, LAST_NAME, EMAIL, PHONE_NUMBER, HIRE_DATE, JOB_ID, SALARY, COMMISSION_PCT, MANAGER_ID, DEPARTMENT_ID)
+VALUES 
+(1, 'John', 'Doe', 'john.doe@example.com', '555-0100', '2023-01-15', 'DEV', 60000.00, 0.10, NULL, 1),
+(2, 'Jane', 'Smith', 'jane.smith@example.com', '555-0101', '2023-02-20', 'MGR', 75000.00, 0.15, 1, 2),
+(3, 'Alice', 'Johnson', 'alice.johnson@example.com', '555-0102', '2023-03-25', 'DEV', 55000.00, NULL, 1, 1),
+(4, 'Bob', 'Brown', 'bob.brown@example.com', '555-0103', '2023-04-30', 'HR', 50000.00, NULL, NULL, 2);
+
+
+<-------------------------------------------------------->
+
+Exercise 2:
+
+SELECT * FROM Employee ORDER BY FIRST_NAME DESC;
+
+<-------------------------------------------------------->
+
+Exercise 3:
+
+SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, SALARY FROM Employee ORDER BY SALARY ASC;
+
+<-------------------------------------------------------->
+
+Exercise 4:
+
+SELECT SUM(SALARY) AS Total_Salaries FROM Employee;
+
+<-------------------------------------------------------->
+
+Exercise 5:
+
+SELECT MAX(SALARY) AS Max_Salary, MIN(SALARY) AS Min_Salary FROM Employee;
+
+<-------------------------------------------------------->
+
+Exercise 6:
+
+SELECT AVG(SALARY) AS Average_Salary, COUNT(*) AS Number_of_Employees FROM Employee;
+
+<-------------------------------------------------------->
+
+Exercise 7:
+
+SELECT COUNT(*) AS Number_of_Employees FROM Employee;
+
+<-------------------------------------------------------->
+
+Exercise 8:
+
+SELECT * FROM Employee LIMIT 10;

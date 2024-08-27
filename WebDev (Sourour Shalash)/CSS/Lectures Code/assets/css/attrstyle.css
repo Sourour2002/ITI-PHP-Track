@@ -1,0 +1,56 @@
+/* div{
+    border: 2px solid;
+} */
+div[id]{
+    background-color: green;
+    color: white;
+}
+
+a[target]{
+    text-decoration: none;
+}
+div[title="testtitle"]{
+    width: 400px;
+    height: 200px;
+}
+[title="test"]
+{
+    color: red;
+}
+
+[title]{
+    text-align: center;
+}
+[title~="test"]
+{
+    margin-top: 50px;
+    background-color: blue;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: gray;
+    /* border: 1px solid black; */
+}
+li{
+    display: inline;
+    float: left;
+}
+li a{
+    text-decoration: none;
+background-color: gray;
+margin: 0;
+padding: 5px 20px;
+}
+.testt{
+    float: right;
+}
+.container:hover div.content{
+display: block;
+
+}
+.content{
+    display: none;
+}
