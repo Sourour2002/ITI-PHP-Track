@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PHP Assignment 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <?php
+    // Question 1
+    echo "<h3>Question 1</h3>";
+    echo "Tomorrow I'll learn PHP global variables.\n";
+    echo "This is a bad command : del c:\\*.*";
+
+    // Question 2
+    echo "<br><hr><h3>Question 2</h3>";
+    $client_ip = $_SERVER['REMOTE_ADDR'];
+    echo "Client IP Address: " . $client_ip;
+
+    // Question 3
+    echo "<br><hr><h3>Question 3</h3>";
+    $d = 'A00';
+
+    for ($i = 1; $i <= 5; $i++) {
+        echo ++$d . "<br>";
+    }
+
+    // Question 4
+    echo "<br><hr><h3>Question 4</h3>";
+    $number = 35;
+
+    if ($number > 30) {
+        echo "The number is greater than 30.";
+    } else {
+        echo "The number is not greater than 30.";
+    }
+
+    // Question 5
+    echo "<br><hr><h3>Question 5</h3>";
+    $word = "hello";
+    $uppercase_word = strtoupper($word);
+    
+    echo "Uppercase: " . $uppercase_word;
+
+    // Question 6
+    echo "<br><hr><h3>Question 6</h3>";
+    $string = "I love programming.";
+    $old_word = "programming";
+    $new_word = "PHP";
+    
+    $replaced_string = str_replace($old_word, $new_word, $string);
+    
+    echo "Replaced String: " . $replaced_string;
+    ?>
+</body>
+</html>

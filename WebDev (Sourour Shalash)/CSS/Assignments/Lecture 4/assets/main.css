@@ -1,0 +1,109 @@
+/* Question 1 */
+.menu-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 40px;
+    height: 8px;
+    background-color: black;
+    border-radius: 4px; 
+}
+
+/* Question 2 */
+.title-box {
+    background-color: #a00;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Question 3 */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Question 4 */
+.navbar {
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-item {
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.navbar .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.navbar .dropdown li {
+    border-bottom: 1px solid #555;
+}
+
+.navbar .dropdown a {
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .dropdown a:hover {
+    background-color: #575757;
+}
+
+/* Show dropdown on hover */
+.navbar .nav-item:hover .dropdown {
+    display: block;
+}
